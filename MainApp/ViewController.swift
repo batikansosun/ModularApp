@@ -11,31 +11,20 @@ import LoginModule
 import PaymentModule
 import CoreModule
 
+//internal typealias Factory = (Any) -> Any
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        // A modular service class instance was instantiated here to validate the correct functioning of modular linking.
-        let coreService = CoreService()
-        coreService.core()
-        
-        let loginService = LoginService()
-        loginService.login()
-        
-        let basketSevice = BasketService()
-        basketSevice.basket()
-        
-        let paymentService = PaymentService()
-        paymentService.payment()
-        
         navigationItem.title = "Main App"
-        
+
     }
     
     @IBAction private func pressedLoginButton() {
-        UIApplication.shared.open(LoginModuleNavigation.home.url)
+        if let sceneDelegate = view.window?.windowScene?.delegate as? SceneDelegate {
+            sceneDelegate.appNavigationService?.navigateToLoginModule()
+        }
     }
     
 }

@@ -10,10 +10,8 @@
 		1391093829B7CEE400F2E067 /* LoginModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1391092F29B7CEE400F2E067 /* LoginModule.framework */; };
 		1391093D29B7CEE400F2E067 /* LoginModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391093C29B7CEE400F2E067 /* LoginModuleTests.swift */; };
 		1391093E29B7CEE400F2E067 /* LoginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 1391093229B7CEE400F2E067 /* LoginModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1391096A29B7D0D300F2E067 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391096929B7D0D300F2E067 /* LoginService.swift */; };
 		139109AC29B7D43A00F2E067 /* CoreModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139109AB29B7D43A00F2E067 /* CoreModule.framework */; };
 		139109AD29B7D43A00F2E067 /* CoreModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 139109AB29B7D43A00F2E067 /* CoreModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		139109CD29B7E4A200F2E067 /* LoginDeeplinkProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139109CC29B7E4A200F2E067 /* LoginDeeplinkProcessor.swift */; };
 		139109D029B7E4D000F2E067 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139109CE29B7E4D000F2E067 /* LoginViewController.swift */; };
 		139109D129B7E4D000F2E067 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 139109CF29B7E4D000F2E067 /* LoginViewController.xib */; };
 		907D65159D67EA4627477C5A /* libPods-LoginModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 500BC9840FAD1CDA10F1F634 /* libPods-LoginModule.a */; };
@@ -50,11 +48,9 @@
 		1391093229B7CEE400F2E067 /* LoginModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginModule.h; sourceTree = "<group>"; };
 		1391093729B7CEE400F2E067 /* LoginModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1391093C29B7CEE400F2E067 /* LoginModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModuleTests.swift; sourceTree = "<group>"; };
-		1391096929B7D0D300F2E067 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		139109A729B7D43600F2E067 /* BasketModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BasketModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		139109AB29B7D43A00F2E067 /* CoreModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		139109AE29B7D43E00F2E067 /* PaymentModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PaymentModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		139109CC29B7E4A200F2E067 /* LoginDeeplinkProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDeeplinkProcessor.swift; sourceTree = "<group>"; };
 		139109CE29B7E4D000F2E067 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		139109CF29B7E4D000F2E067 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		500BC9840FAD1CDA10F1F634 /* libPods-LoginModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoginModule.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,9 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				1391093229B7CEE400F2E067 /* LoginModule.h */,
-				1391096929B7D0D300F2E067 /* LoginService.swift */,
 				139109D229B7E4DA00F2E067 /* LoginViewController */,
-				139109CC29B7E4A200F2E067 /* LoginDeeplinkProcessor.swift */,
 			);
 			path = LoginModule;
 			sourceTree = "<group>";
@@ -320,8 +314,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				139109D029B7E4D000F2E067 /* LoginViewController.swift in Sources */,
-				139109CD29B7E4A200F2E067 /* LoginDeeplinkProcessor.swift in Sources */,
-				1391096A29B7D0D300F2E067 /* LoginService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

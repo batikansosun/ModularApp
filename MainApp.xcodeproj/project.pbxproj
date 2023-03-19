@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		135F308D29C0EB97008112E9 /* ModuleNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135F308C29C0EB97008112E9 /* ModuleNavigator.swift */; };
 		139108F029B7CEA700F2E067 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139108EF29B7CEA700F2E067 /* AppDelegate.swift */; };
 		139108F229B7CEA700F2E067 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139108F129B7CEA700F2E067 /* SceneDelegate.swift */; };
 		139108F429B7CEA700F2E067 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139108F329B7CEA700F2E067 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		135F308C29C0EB97008112E9 /* ModuleNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleNavigator.swift; sourceTree = "<group>"; };
 		139108EC29B7CEA700F2E067 /* MainApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MainApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		139108EF29B7CEA700F2E067 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		139108F129B7CEA700F2E067 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				139108EF29B7CEA700F2E067 /* AppDelegate.swift */,
 				139108F129B7CEA700F2E067 /* SceneDelegate.swift */,
 				139108F329B7CEA700F2E067 /* ViewController.swift */,
+				135F308C29C0EB97008112E9 /* ModuleNavigator.swift */,
 				139108F529B7CEA700F2E067 /* Main.storyboard */,
 				139108F829B7CEA900F2E067 /* Assets.xcassets */,
 				139108FA29B7CEA900F2E067 /* LaunchScreen.storyboard */,
@@ -134,6 +137,7 @@
 				139108E929B7CEA700F2E067 /* Frameworks */,
 				139108EA29B7CEA700F2E067 /* Resources */,
 				1391099429B7D28800F2E067 /* Embed Frameworks */,
+				CADD870B7437A3F4388389BE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,6 +217,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CADD870B7437A3F4388389BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MainApp/Pods-MainApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MainApp/Pods-MainApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MainApp/Pods-MainApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -220,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				135F308D29C0EB97008112E9 /* ModuleNavigator.swift in Sources */,
 				139108F429B7CEA700F2E067 /* ViewController.swift in Sources */,
 				139108F029B7CEA700F2E067 /* AppDelegate.swift in Sources */,
 				139108F229B7CEA700F2E067 /* SceneDelegate.swift in Sources */,

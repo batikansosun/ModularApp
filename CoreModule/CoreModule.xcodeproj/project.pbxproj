@@ -7,16 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		135F308B29C0EB53008112E9 /* NavigationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135F308A29C0EB53008112E9 /* NavigationService.swift */; };
+		137DD08429C26E2B0008FF2B /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137DD08329C26E2B0008FF2B /* DIContainer.swift */; };
 		1391098029B7D17100F2E067 /* CoreModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1391097729B7D17100F2E067 /* CoreModule.framework */; };
 		1391098529B7D17100F2E067 /* CoreModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391098429B7D17100F2E067 /* CoreModuleTests.swift */; };
 		1391098629B7D17100F2E067 /* CoreModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 1391097A29B7D17100F2E067 /* CoreModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1391099C29B7D38D00F2E067 /* CoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391099B29B7D38D00F2E067 /* CoreService.swift */; };
-		139109C029B7D8C600F2E067 /* DeeplinkHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139109BF29B7D8C600F2E067 /* DeeplinkHandlerProtocol.swift */; };
-		139109C229B7D90200F2E067 /* DeeplinkProcessorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139109C129B7D90200F2E067 /* DeeplinkProcessorProtocol.swift */; };
-		139109C429B7D92F00F2E067 /* DefaultDeeplinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139109C329B7D92F00F2E067 /* DefaultDeeplinkHandler.swift */; };
-		139109D429B8BC3800F2E067 /* PaymentModuleNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139109D329B8BC3800F2E067 /* PaymentModuleNavigation.swift */; };
-		139109D729B8BC9400F2E067 /* LoginModuleNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139109D629B8BC9400F2E067 /* LoginModuleNavigation.swift */; };
-		139109D929B8BC9D00F2E067 /* BasketModuleNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139109D829B8BC9D00F2E067 /* BasketModuleNavigation.swift */; };
 		24A30001329F76AB5BF19CC8 /* libPods-CoreModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC373B992A856B937C7F957 /* libPods-CoreModule.a */; };
 		360BB9506C76B67F3F911215 /* libPods-CoreModule-CoreModuleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA457327BDDD0646E4B1D41 /* libPods-CoreModule-CoreModuleTests.a */; };
 /* End PBXBuildFile section */
@@ -32,17 +27,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		135F308A29C0EB53008112E9 /* NavigationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationService.swift; sourceTree = "<group>"; };
+		137DD08329C26E2B0008FF2B /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		1391097729B7D17100F2E067 /* CoreModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1391097A29B7D17100F2E067 /* CoreModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreModule.h; sourceTree = "<group>"; };
 		1391097F29B7D17100F2E067 /* CoreModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1391098429B7D17100F2E067 /* CoreModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreModuleTests.swift; sourceTree = "<group>"; };
-		1391099B29B7D38D00F2E067 /* CoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreService.swift; sourceTree = "<group>"; };
-		139109BF29B7D8C600F2E067 /* DeeplinkHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkHandlerProtocol.swift; sourceTree = "<group>"; };
-		139109C129B7D90200F2E067 /* DeeplinkProcessorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkProcessorProtocol.swift; sourceTree = "<group>"; };
-		139109C329B7D92F00F2E067 /* DefaultDeeplinkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDeeplinkHandler.swift; sourceTree = "<group>"; };
-		139109D329B8BC3800F2E067 /* PaymentModuleNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentModuleNavigation.swift; sourceTree = "<group>"; };
-		139109D629B8BC9400F2E067 /* LoginModuleNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModuleNavigation.swift; sourceTree = "<group>"; };
-		139109D829B8BC9D00F2E067 /* BasketModuleNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketModuleNavigation.swift; sourceTree = "<group>"; };
 		2BA457327BDDD0646E4B1D41 /* libPods-CoreModule-CoreModuleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreModule-CoreModuleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB90D1FE7BFD4C5C3E9D69C /* Pods-CoreModule-CoreModuleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreModule-CoreModuleTests.debug.xcconfig"; path = "Target Support Files/Pods-CoreModule-CoreModuleTests/Pods-CoreModule-CoreModuleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9FC373B992A856B937C7F957 /* libPods-CoreModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreModule.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,12 +85,9 @@
 		1391097929B7D17100F2E067 /* CoreModule */ = {
 			isa = PBXGroup;
 			children = (
+				135F308A29C0EB53008112E9 /* NavigationService.swift */,
+				137DD08329C26E2B0008FF2B /* DIContainer.swift */,
 				1391097A29B7D17100F2E067 /* CoreModule.h */,
-				1391099B29B7D38D00F2E067 /* CoreService.swift */,
-				139109D529B8BC7F00F2E067 /* ModuleNavigation */,
-				139109BF29B7D8C600F2E067 /* DeeplinkHandlerProtocol.swift */,
-				139109C129B7D90200F2E067 /* DeeplinkProcessorProtocol.swift */,
-				139109C329B7D92F00F2E067 /* DefaultDeeplinkHandler.swift */,
 			);
 			path = CoreModule;
 			sourceTree = "<group>";
@@ -111,16 +98,6 @@
 				1391098429B7D17100F2E067 /* CoreModuleTests.swift */,
 			);
 			path = CoreModuleTests;
-			sourceTree = "<group>";
-		};
-		139109D529B8BC7F00F2E067 /* ModuleNavigation */ = {
-			isa = PBXGroup;
-			children = (
-				139109D329B8BC3800F2E067 /* PaymentModuleNavigation.swift */,
-				139109D829B8BC9D00F2E067 /* BasketModuleNavigation.swift */,
-				139109D629B8BC9400F2E067 /* LoginModuleNavigation.swift */,
-			);
-			path = ModuleNavigation;
 			sourceTree = "<group>";
 		};
 		6306EEC97FEE9E7DAC0A0DBD /* Frameworks */ = {
@@ -303,13 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				139109C029B7D8C600F2E067 /* DeeplinkHandlerProtocol.swift in Sources */,
-				139109D429B8BC3800F2E067 /* PaymentModuleNavigation.swift in Sources */,
-				1391099C29B7D38D00F2E067 /* CoreService.swift in Sources */,
-				139109D929B8BC9D00F2E067 /* BasketModuleNavigation.swift in Sources */,
-				139109D729B8BC9400F2E067 /* LoginModuleNavigation.swift in Sources */,
-				139109C429B7D92F00F2E067 /* DefaultDeeplinkHandler.swift in Sources */,
-				139109C229B7D90200F2E067 /* DeeplinkProcessorProtocol.swift in Sources */,
+				137DD08429C26E2B0008FF2B /* DIContainer.swift in Sources */,
+				135F308B29C0EB53008112E9 /* NavigationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

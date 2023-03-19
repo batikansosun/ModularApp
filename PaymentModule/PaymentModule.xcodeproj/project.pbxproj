@@ -10,12 +10,10 @@
 		1391091629B7CECE00F2E067 /* PaymentModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1391090D29B7CECE00F2E067 /* PaymentModule.framework */; };
 		1391091B29B7CECE00F2E067 /* PaymentModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391091A29B7CECE00F2E067 /* PaymentModuleTests.swift */; };
 		1391091C29B7CECE00F2E067 /* PaymentModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 1391091029B7CECE00F2E067 /* PaymentModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1391096C29B7D10100F2E067 /* PaymentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391096B29B7D10100F2E067 /* PaymentService.swift */; };
 		139109B629B7D44A00F2E067 /* CoreModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139109B529B7D44A00F2E067 /* CoreModule.framework */; };
 		139109B729B7D44A00F2E067 /* CoreModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 139109B529B7D44A00F2E067 /* CoreModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		139109DC29B8BDDB00F2E067 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139109DA29B8BDDB00F2E067 /* PaymentViewController.swift */; };
 		139109DD29B8BDDB00F2E067 /* PaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 139109DB29B8BDDB00F2E067 /* PaymentViewController.xib */; };
-		139109E029B8BFC500F2E067 /* PaymentDeeplinkProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139109DF29B8BFC500F2E067 /* PaymentDeeplinkProcessor.swift */; };
 		7402A45405156776FE52B09A /* libPods-PaymentModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3520612708B9FC862F874746 /* libPods-PaymentModule.a */; };
 		FAD04953A14C2B40F790053B /* libPods-PaymentModule-PaymentModuleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F002E6EA685492ECA31EF5AB /* libPods-PaymentModule-PaymentModuleTests.a */; };
 /* End PBXBuildFile section */
@@ -49,13 +47,11 @@
 		1391091029B7CECE00F2E067 /* PaymentModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentModule.h; sourceTree = "<group>"; };
 		1391091529B7CECE00F2E067 /* PaymentModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaymentModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1391091A29B7CECE00F2E067 /* PaymentModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentModuleTests.swift; sourceTree = "<group>"; };
-		1391096B29B7D10100F2E067 /* PaymentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentService.swift; sourceTree = "<group>"; };
 		139109B129B7D44500F2E067 /* BasketModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BasketModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		139109B529B7D44A00F2E067 /* CoreModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		139109B829B7D45000F2E067 /* LoginModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoginModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		139109DA29B8BDDB00F2E067 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		139109DB29B8BDDB00F2E067 /* PaymentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentViewController.xib; sourceTree = "<group>"; };
-		139109DF29B8BFC500F2E067 /* PaymentDeeplinkProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDeeplinkProcessor.swift; sourceTree = "<group>"; };
 		2D12CAD0CEF5EC9603BF62F0 /* Pods-PaymentModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentModule.debug.xcconfig"; path = "Target Support Files/Pods-PaymentModule/Pods-PaymentModule.debug.xcconfig"; sourceTree = "<group>"; };
 		3520612708B9FC862F874746 /* libPods-PaymentModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PaymentModule.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0AB30FE6C47D1D735DC819E /* Pods-PaymentModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentModule.release.xcconfig"; path = "Target Support Files/Pods-PaymentModule/Pods-PaymentModule.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,8 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				1391091029B7CECE00F2E067 /* PaymentModule.h */,
-				1391096B29B7D10100F2E067 /* PaymentService.swift */,
-				139109DF29B8BFC500F2E067 /* PaymentDeeplinkProcessor.swift */,
 				139109DE29B8BDDF00F2E067 /* PaymentViewController */,
 			);
 			path = PaymentModule;
@@ -319,8 +313,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1391096C29B7D10100F2E067 /* PaymentService.swift in Sources */,
-				139109E029B8BFC500F2E067 /* PaymentDeeplinkProcessor.swift in Sources */,
 				139109DC29B8BDDB00F2E067 /* PaymentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,10 +10,8 @@
 		1391095A29B7CEF900F2E067 /* BasketModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1391095129B7CEF900F2E067 /* BasketModule.framework */; };
 		1391095F29B7CEF900F2E067 /* BasketModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391095E29B7CEF900F2E067 /* BasketModuleTests.swift */; };
 		1391096029B7CEF900F2E067 /* BasketModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 1391095429B7CEF900F2E067 /* BasketModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1391099029B7D24100F2E067 /* BasketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391098F29B7D24100F2E067 /* BasketService.swift */; };
 		139109BC29B7D59B00F2E067 /* CoreModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139109BB29B7D59B00F2E067 /* CoreModule.framework */; };
 		139109BD29B7D59B00F2E067 /* CoreModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 139109BB29B7D59B00F2E067 /* CoreModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		139109C629B7DD0600F2E067 /* BasketDeeplinkProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139109C529B7DD0600F2E067 /* BasketDeeplinkProcessor.swift */; };
 		139109C929B7DF4500F2E067 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139109C729B7DF4500F2E067 /* BasketViewController.swift */; };
 		139109CA29B7DF4500F2E067 /* BasketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 139109C829B7DF4500F2E067 /* BasketViewController.xib */; };
 		61564271ACD4EDC4045ABD32 /* libPods-BasketModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E85664FE2A3F0553E033952 /* libPods-BasketModule.a */; };
@@ -50,12 +48,10 @@
 		1391095429B7CEF900F2E067 /* BasketModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasketModule.h; sourceTree = "<group>"; };
 		1391095929B7CEF900F2E067 /* BasketModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BasketModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1391095E29B7CEF900F2E067 /* BasketModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketModuleTests.swift; sourceTree = "<group>"; };
-		1391098F29B7D24100F2E067 /* BasketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketService.swift; sourceTree = "<group>"; };
 		1391099D29B7D42000F2E067 /* CoreModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		139109A129B7D42300F2E067 /* LoginModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoginModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		139109A429B7D42800F2E067 /* PaymentModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PaymentModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		139109BB29B7D59B00F2E067 /* CoreModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		139109C529B7DD0600F2E067 /* BasketDeeplinkProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketDeeplinkProcessor.swift; sourceTree = "<group>"; };
 		139109C729B7DF4500F2E067 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
 		139109C829B7DF4500F2E067 /* BasketViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasketViewController.xib; sourceTree = "<group>"; };
 		44F75E8E610E9B54E3181320 /* Pods-BasketModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasketModule.release.xcconfig"; path = "Target Support Files/Pods-BasketModule/Pods-BasketModule.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,9 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				1391095429B7CEF900F2E067 /* BasketModule.h */,
-				1391098F29B7D24100F2E067 /* BasketService.swift */,
 				139109CB29B7DF4B00F2E067 /* BasketViewController */,
-				139109C529B7DD0600F2E067 /* BasketDeeplinkProcessor.swift */,
 			);
 			path = BasketModule;
 			sourceTree = "<group>";
@@ -322,8 +316,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				139109C929B7DF4500F2E067 /* BasketViewController.swift in Sources */,
-				139109C629B7DD0600F2E067 /* BasketDeeplinkProcessor.swift in Sources */,
-				1391099029B7D24100F2E067 /* BasketService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

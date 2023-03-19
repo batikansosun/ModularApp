@@ -11,26 +11,22 @@ import CoreModule
 import BasketModule
 import PaymentModule
 import LoginModule
+import Swinject
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+    
+    
+    var appNavigationService: NavigationService?
 
     var window: UIWindow?
-    
-    lazy var deeplinkHandler: DeeplinkHandlerProtocol = {
-        let viewController = window?.rootViewController
-        var processor = [DeeplinkProcessorProtocol]()
-        processor.append(LoginDeeplinkProcessor(sourceViewController: viewController))
-        processor.append(BasketDeeplinkProcessor(sourceViewController: viewController))
-        processor.append(PaymentDeeplinkProcessor(sourceViewController: viewController))
-        let deeplinkHandler = DefaultDeeplinkHandler(processors: processor)
-        return deeplinkHandler
-    }()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+
+        registerModules()
+        //appNavigationService?.navigateToLoginModule()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -62,9 +58,27 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
-        if let url = URLContexts.first?.url {
-            deeplinkHandler.process(deeplink: url.absoluteString)
+    }
+    
+    
+    private func registerModules() {
+        guard let navigationController = window?.rootViewController as? UINavigationController else { return }
+        let container = DIContainer()
+        container.register(type: NavigationService.self) { _ in
+            ModuleNavigator(navigationController: navigationController, container: container)
         }
+        
+        
+        container.register(type: PresentableLoginView.self, name: "PresentableLoginView") { r in
+            LoginViewController(navigationService: r.resolve(type:NavigationService.self)!)
+        }
+        container.register(type: PresentableBasketView.self) { r in
+            BasketViewController(navigationService: r.resolve(type:NavigationService.self)!)
+        }
+        container.register(type: PresentablePaymentView.self) { r in
+            PaymentViewController(navigationService: r.resolve(type:NavigationService.self)!)
+        }
+        appNavigationService = container.resolve(type: NavigationService.self)!
     }
 }
 
