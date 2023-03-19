@@ -14,6 +14,7 @@
 		139109AD29B7D43A00F2E067 /* CoreModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 139109AB29B7D43A00F2E067 /* CoreModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		139109D029B7E4D000F2E067 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139109CE29B7E4D000F2E067 /* LoginViewController.swift */; };
 		139109D129B7E4D000F2E067 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 139109CF29B7E4D000F2E067 /* LoginViewController.xib */; };
+		13F9AE0F29C7931900E432B8 /* LoginNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F9AE0E29C7931900E432B8 /* LoginNavigation.swift */; };
 		907D65159D67EA4627477C5A /* libPods-LoginModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 500BC9840FAD1CDA10F1F634 /* libPods-LoginModule.a */; };
 		99EA117FB5C4B88295B86B5A /* libPods-LoginModule-LoginModuleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 067DCF1F036BC0C11F1B5528 /* libPods-LoginModule-LoginModuleTests.a */; };
 /* End PBXBuildFile section */
@@ -53,6 +54,7 @@
 		139109AE29B7D43E00F2E067 /* PaymentModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PaymentModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		139109CE29B7E4D000F2E067 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		139109CF29B7E4D000F2E067 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		13F9AE0E29C7931900E432B8 /* LoginNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavigation.swift; sourceTree = "<group>"; };
 		500BC9840FAD1CDA10F1F634 /* libPods-LoginModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoginModule.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		815CAA6AA0D039157D231C2C /* Pods-LoginModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginModule.release.xcconfig"; path = "Target Support Files/Pods-LoginModule/Pods-LoginModule.release.xcconfig"; sourceTree = "<group>"; };
 		D414E92D0FC00F7B4BD5A116 /* Pods-LoginModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginModule.debug.xcconfig"; path = "Target Support Files/Pods-LoginModule/Pods-LoginModule.debug.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				1391093229B7CEE400F2E067 /* LoginModule.h */,
+				13F9AE0E29C7931900E432B8 /* LoginNavigation.swift */,
 				139109D229B7E4DA00F2E067 /* LoginViewController */,
 			);
 			path = LoginModule;
@@ -314,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				139109D029B7E4D000F2E067 /* LoginViewController.swift in Sources */,
+				13F9AE0F29C7931900E432B8 /* LoginNavigation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,9 +11,9 @@ import CoreModule
 public class LoginViewController: UIViewController, PresentableLoginView {
     
     
-    var navigationService: NavigationService
+    var navigationService: LoginNavigationService
     
-    public init(navigationService: NavigationService) {
+    public init(navigationService: LoginNavigationService) {
         self.navigationService = navigationService
         super.init(nibName: String(describing: Self.self), bundle: Bundle(for: Self.self))
     }
@@ -29,7 +29,7 @@ public class LoginViewController: UIViewController, PresentableLoginView {
     }
 
     @IBAction private func pressedBasketButton() {
-        navigationService.navigateToBasketModule()
+        navigationService.openBasketViewController()
     }
 
 }

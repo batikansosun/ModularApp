@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     
     @IBAction private func pressedLoginButton() {
         if let sceneDelegate = view.window?.windowScene?.delegate as? SceneDelegate {
-            sceneDelegate.appNavigationService?.navigateToLoginModule()
+            sceneDelegate.appNavigationService?.openLoginViewController()
         }
     }
     

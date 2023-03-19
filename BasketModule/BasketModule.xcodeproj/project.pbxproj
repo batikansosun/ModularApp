@@ -14,6 +14,7 @@
 		139109BD29B7D59B00F2E067 /* CoreModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 139109BB29B7D59B00F2E067 /* CoreModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		139109C929B7DF4500F2E067 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139109C729B7DF4500F2E067 /* BasketViewController.swift */; };
 		139109CA29B7DF4500F2E067 /* BasketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 139109C829B7DF4500F2E067 /* BasketViewController.xib */; };
+		13F9AE1329C79F6500E432B8 /* BasketNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F9AE1229C79F6500E432B8 /* BasketNavigation.swift */; };
 		61564271ACD4EDC4045ABD32 /* libPods-BasketModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E85664FE2A3F0553E033952 /* libPods-BasketModule.a */; };
 		EF5D089DACEF2D7E52CD3315 /* libPods-BasketModule-BasketModuleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BE7E3109F4D43265375FE6 /* libPods-BasketModule-BasketModuleTests.a */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		139109BB29B7D59B00F2E067 /* CoreModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		139109C729B7DF4500F2E067 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
 		139109C829B7DF4500F2E067 /* BasketViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasketViewController.xib; sourceTree = "<group>"; };
+		13F9AE1229C79F6500E432B8 /* BasketNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketNavigation.swift; sourceTree = "<group>"; };
 		44F75E8E610E9B54E3181320 /* Pods-BasketModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasketModule.release.xcconfig"; path = "Target Support Files/Pods-BasketModule/Pods-BasketModule.release.xcconfig"; sourceTree = "<group>"; };
 		4E85664FE2A3F0553E033952 /* libPods-BasketModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BasketModule.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73BE7E3109F4D43265375FE6 /* libPods-BasketModule-BasketModuleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BasketModule-BasketModuleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				1391095429B7CEF900F2E067 /* BasketModule.h */,
+				13F9AE1229C79F6500E432B8 /* BasketNavigation.swift */,
 				139109CB29B7DF4B00F2E067 /* BasketViewController */,
 			);
 			path = BasketModule;
@@ -316,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				139109C929B7DF4500F2E067 /* BasketViewController.swift in Sources */,
+				13F9AE1329C79F6500E432B8 /* BasketNavigation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

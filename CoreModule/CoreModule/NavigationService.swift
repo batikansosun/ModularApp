@@ -9,12 +9,9 @@ import Foundation
 import UIKit
 import Swinject
 
-public protocol NavigationService {
+public protocol NavigationService: ExternalNavigationService {
     var navigationController: UINavigationController { get set }
-    
-    func navigateToLoginModule()
-    func navigateToBasketModule()
-    func navigatePaymentModule()
+    var container: DIContainerService { get set }
     func popToRootViewController(animated: Bool)
 }
 
@@ -35,5 +32,12 @@ public protocol PresentableLoginView: PresentableView {}
 public protocol PresentableBasketView: PresentableView {}
 public protocol PresentablePaymentView: PresentableView {}
 
+
+
+public protocol ExternalNavigationService {
+    func openLoginViewController()
+    func openBasketViewController()
+    func openPaymentViewController()
+}
 
 

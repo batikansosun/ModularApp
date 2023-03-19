@@ -25,7 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
-        registerModules()
+        registerModuleNavigation()
         //appNavigationService?.navigateToLoginModule()
     }
 
@@ -61,22 +61,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     
-    private func registerModules() {
+    private func registerModuleNavigation() {
         guard let navigationController = window?.rootViewController as? UINavigationController else { return }
         let container = DIContainer()
         container.register(type: NavigationService.self) { _ in
-            ModuleNavigator(navigationController: navigationController, container: container)
+            AppNavigation(navigationController: navigationController, container: container)
         }
         
+        container.register(type: LoginNavigationService.self) { container in
+            LoginNavigation(container: container, navigationController: navigationController)
+        }
         
-        container.register(type: PresentableLoginView.self, name: "PresentableLoginView") { r in
-            LoginViewController(navigationService: r.resolve(type:NavigationService.self)!)
+        container.register(type: BasketNavigationService.self) { container in
+            BasketNavigation(container: container, navigationController: navigationController)
         }
-        container.register(type: PresentableBasketView.self) { r in
-            BasketViewController(navigationService: r.resolve(type:NavigationService.self)!)
-        }
-        container.register(type: PresentablePaymentView.self) { r in
-            PaymentViewController(navigationService: r.resolve(type:NavigationService.self)!)
+        
+        container.register(type: PaymentNavigationService.self) { container in
+            PaymentNavigation(container: container, navigationController: navigationController)
         }
         appNavigationService = container.resolve(type: NavigationService.self)!
     }

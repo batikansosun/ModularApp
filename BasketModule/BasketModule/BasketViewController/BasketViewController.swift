@@ -10,9 +10,9 @@ import CoreModule
 
 public class BasketViewController: UIViewController, PresentableBasketView {
     
-    var navigationService: NavigationService
+    var navigationService: BasketNavigationService
     
-    public init(navigationService: NavigationService) {
+    public init(navigationService: BasketNavigationService) {
         self.navigationService = navigationService
         super.init(nibName: String(describing: Self.self), bundle: Bundle(for: Self.self))
     }
@@ -29,7 +29,7 @@ public class BasketViewController: UIViewController, PresentableBasketView {
     
     
     @IBAction private func pressedPaymentButton() {
-        navigationService.navigatePaymentModule()
+        navigationService.openPaymentViewController()
     }
 
 }

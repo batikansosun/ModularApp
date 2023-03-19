@@ -11,9 +11,12 @@ typealias Factory = (DIContainerService) -> Any
 
 protocol ServiceEntryProtocol: AnyObject{
     var factory: Factory { get }
+    var instance: Any? { get set }
 }
 
 final public class ServiceEntry: ServiceEntryProtocol {
+    var instance: Any?
+    
     var factory: Factory
     weak var container: DIContainer?
     
@@ -55,7 +58,14 @@ final public class DIContainer: DIContainerService {
     public func resolve<Service>(type: Service.Type, name: String?) -> Service? {
         let key = "\(type)\(name ?? "")"
         if let entry = services[key] {
-            return entry.factory(self) as? Service
+            var resolvedService: Service?
+            if let instance = entry.instance {
+                resolvedService = instance as? Service
+            } else {
+                resolvedService = entry.factory(self) as? Service
+                entry.instance = resolvedService
+            }
+            return resolvedService
         }
         return nil
     }
